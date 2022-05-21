@@ -181,6 +181,18 @@ a:hover {
 	right: 10px;
 }
 
+#next {
+	position: absolute;
+	bottom: -220px;
+	right: 10px;
+}
+
+#loading-content{
+	font-size: small;
+	position: absolute;
+	bottom: -220px;
+	right: 30px;
+}
 
 /*****************************/
 
@@ -338,8 +350,13 @@ section.container:target > form.flip {
 
 section.container > form.flip > .front {
 	font-size: 1.25em;
-	background: beige url("../img/bg.png");
-	background: url("../img/stamp.png") no-repeat 450px 20px, url("../img/bg.png");
+	/* background: beige url("../img/bg.png"); */
+	/* background-image: url("../img/stamp.jpeg"), url("../img/bg.png");
+	background-repeat: no-repeat;
+	background-position: 450px 20px, 0;
+	background-size: 100px 100px, cover; */
+	background: url("../img/stamp.jpeg") no-repeat 450px 20px, url("../img/bg.png"); 
+	background-size: 120px 120px;
 	padding: 120px 20px 20px 40%;
 	border: 1px #eae1d5 solid;
 }

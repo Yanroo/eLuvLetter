@@ -130,6 +130,13 @@ window.onload = function () {
 		event.preventDefault();
 	});
 
+	let next = document.getElementById('next');
+	let loading = document.getElementById('loading-content')
+      setTimeout(function(){
+        next.innerHTML = 'Next';
+		loading.innerHTML = '';
+	}, 100000)
+
 	$('body').css('opacity', '1');
 	$('#jsi-cherry-container').css('z-index', '-99');
 
